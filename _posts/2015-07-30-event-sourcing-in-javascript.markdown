@@ -41,7 +41,7 @@ It sounds like such a *basic* requirement, it's so obvious! But looping back to 
 
 I think the feelings of the entire team at this point can be summed up by Steve Harvey more concisely than I could ever manage:
 
-![Steve Harvey gives up](http://media.giphy.com/media/13csOGz0vTo9Dq/giphy.gif)
+![Steve Harvey gives up]({{ site.url }}/assets/images/steve-harvey-give-up.gif)
 
 ## *"Maybe we should just start again"*
 
