@@ -34,7 +34,7 @@ Thankfully, there's another way. Enter [weinre](https://people.apache.org/~pmuel
 
 *"weinre is a debugger for web pages, like Firebug (for Firefox) and Web Inspector (for Web Kit-based browsers), except it's designed to work remotely, and in particular, to allow you debug web pages on a mobile device such as a phone."*
 
-![](https://people.apache.org/~pmuellr/weinre-docs/latest/images/weinre-demo.jpg)
+![weinre demo]({{ site.url }}/assets/images/weinre-demo.jpg)
 
 It's a bit dated now, but it's pretty good and whilst the original intent was to debug on mobile, in actuality the scenario isn't really that different to our problem.
 
