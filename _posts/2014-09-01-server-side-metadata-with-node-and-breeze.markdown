@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Server-side metadata with Node and Breeze"
-date:   2014-10-15 09:00:00 +0100
+date:   2014-09-01 09:00:00 +0100
 categories: javascript breeze node mongo
 ---
 I recently came across a library called [Breeze](http://www.breezejs.com/), which (to sum up *very* briefly) is a client side JavaScript library that allows entity based data management; a kind of front-end ORM.
