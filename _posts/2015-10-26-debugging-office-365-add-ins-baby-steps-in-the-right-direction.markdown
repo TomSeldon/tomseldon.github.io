@@ -18,7 +18,7 @@ When working on the markdown add-in I was viewing progress in Chrome and mocking
 
 I managed to get the development version of the add-in running in Microsoft Word, just to confirm it worked *for real*.* *It didn't. It didn't spectacularly explode, it just didn't seem to do anything. No problem, I thought. I'll just open up dev tools and... Oh.
 
-![](http://i.imgur.com/Jav5Tq2.png)
+![Office 365 lacking developer tools]({{ site.url }}/assets/images/word-to-markdown.png)
 
 No dev tools. No console to view. No chance!
 
@@ -76,13 +76,13 @@ Add the instrumentation script to the add-in index.html. You wouldn't want to le
 
 Note that we haven't used a direct URL to the weinre server (which could be something like <http://localhost:8080/>) and we're instead pointing at the ngrok reverse proxy we setup in the previous step. The actual URL used will differ each time you run ngrok.
 
-![](http://i.imgur.com/XEpP93A.png)
+![ngrok tunnelling example]({{ site.url }}/assets/images/ngrok-example.png)
 
 Next, open up the debug client by visiting http://localhost:8080/client (or the ngrok URL if the weinre server is running remotely) and finally, launch your add-in using Office.
 
 You should now see your add-in show up in the debug client. You can view and modify the DOM tree, have access to an interactive console and can view network requests, web storage, etc.
 
-![](http://i.imgur.com/p4HNjdD.png)
+![weinre working with Office 365]({{ site.url }}/assets/images/office-365-weinre.png)
 
 This isn't a fully featured debug client like Chrome dev tools or Firebug. In fact, far from it. You can't use breakpoints, can't drill down into individual source files to see what's being run and a lot else is missing, too. But it's definitely a baby step in the right direction towards being able to properly debug (and hence develop for) Microsoft Office.
 
