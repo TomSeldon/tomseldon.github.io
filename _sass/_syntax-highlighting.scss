@@ -1,0 +1,24 @@
+%vertical-rhythm {
+    margin-bottom: 15px;
+}
+
+@import 'minima/syntax-highlighting';
+
+.highlight {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1.5em 0;
+    overflow-x: scroll;
+    padding: 1em 0.75em;
+
+    pre {
+        margin: 0;
+    }
+}
+
+code.highlighter-rouge {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1.1em;
+    padding: 0 0.25em;
+}

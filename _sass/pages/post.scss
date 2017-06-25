@@ -1,0 +1,58 @@
+@import '../colours';
+
+.post {
+    &__title {
+        font-size: 1.8em;
+        margin: 0 0 0.25em 0;
+    }
+
+    &__date {
+        color: $post-date-color;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        font-size: 1.05em;
+        line-height: 1.42857143;
+        margin-top: 1.5em;
+
+        h2 {
+            border-bottom: 1px solid #aaa;
+            margin: 1.5em 0 0.75em 0;
+            padding-bottom: 0.1em;
+            font-size: 1.4em;
+        }
+        
+        p {
+            margin: 0 0 1em 0;
+        }
+
+        blockquote {
+            background: #eee;
+            background: rgba(255, 255, 255, 0.8);
+            border-left: 5px solid $ts-blue;
+            padding: 1em 1em 1em 2em;
+            margin: 2em 0;
+            font-style: italic;
+
+            p:first-child {
+                margin-top: 0;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__comments {
+        border-top: 1px solid #aaa;
+        margin: 2em 0;
+        padding-top: 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

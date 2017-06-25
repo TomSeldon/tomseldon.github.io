@@ -16,7 +16,7 @@ Sometimes, just sometimes, things don't always work first time. We can unit test
 
 When working on the markdown add-in I was viewing progress in Chrome and mocking the Office JavaScript APIs I'd be calling. It all seemed to go pretty smoothly... Ready for production, right?
 
-I managed to get the development version of the add-in running in Microsoft Word, just to confirm it worked *for real*.* *It didn't. It didn't spectacularly explode, it just didn't seem to do anything. No problem, I thought. I'll just open up dev tools and... Oh.
+I managed to get the development version of the add-in running in Microsoft Word, just to confirm it worked *for real*. It didn't. It didn't spectacularly explode, it just didn't seem to do anything. No problem, I thought. I'll just open up dev tools and... Oh.
 
 ![Office 365 lacking developer tools]({{ site.url }}/assets/images/word-to-markdown.png)
 
@@ -32,7 +32,7 @@ For the online suite of Office applications you can still use Chrome dev tools, 
 
 Thankfully, there's another way. Enter [weinre](https://people.apache.org/~pmuellr/weinre-docs/latest/Home.html).
 
-*"weinre is a debugger for web pages, like Firebug (for Firefox) and Web Inspector (for Web Kit-based browsers), except it's designed to work remotely, and in particular, to allow you debug web pages on a mobile device such as a phone."*
+> weinre is a debugger for web pages, like Firebug (for Firefox) and Web Inspector (for Web Kit-based browsers), except it's designed to work remotely, and in particular, to allow you debug web pages on a mobile device such as a phone.
 
 ![weinre demo]({{ site.url }}/assets/images/weinre-demo.jpg)
 

@@ -1,0 +1,32 @@
+{
+  "name": "tomseldon.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "node_modules/.bin/webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomSeldon/tomseldon.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomSeldon/tomseldon.github.io/issues"
+  },
+  "homepage": "https://github.com/TomSeldon/tomseldon.github.io#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.2",
+    "awesome-typescript-loader": "^3.1.3",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "tippy.js": "^1.0.0"
+  }
+}

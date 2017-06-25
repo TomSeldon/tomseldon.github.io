@@ -1,0 +1,6 @@
+.side-bar {
+    @media all and (min-width: 960px) {
+        position: sticky;
+        top: 2em;
+    }
+}

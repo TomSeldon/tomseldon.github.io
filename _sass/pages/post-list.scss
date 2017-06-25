@@ -1,0 +1,74 @@
+@import '../colours';
+
+.post-list {
+    &__posts {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__post {
+        border-bottom: 1px solid $post-separator-color;
+        margin: 1.5em auto;
+        padding: 0 0 1.5em 0;
+
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__post-title {
+        font-weight: 400;
+        margin: 0 0 0.5em 0;
+    }
+
+    &__post-metadata {
+        margin: 0.5em auto;
+    }
+
+    &__post-date {
+        color: $post-date-color;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__post-excerpt {
+        margin: 1em 0 2em 0;
+    }
+
+    &__read-more {
+        background: $ts-blue;
+        border: 4px solid lighten($ts-blue, 15%);
+        color: lighten($ts-blue, 60%);
+        display: inline-block;
+        padding: 0.3em 2em 0.3em 1em;
+        position: relative;
+
+        &:hover {
+            background: lighten($ts-purple, 10%);
+            border-color: lighten($ts-purple, 25%);
+            color: lighten($ts-purple, 60%);
+        }
+
+        &:focus {
+            .post-list__read-more-icon {
+                right: 0.6em;
+            }
+        }
+    }
+
+    &__read-more-icon {
+        font-size: 0.9em;
+        position: absolute;
+        right: 0.75em;
+        top: 30%;
+        transition: right 0.1s ease-in-out;
+   }
+}

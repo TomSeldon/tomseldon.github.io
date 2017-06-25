@@ -1,0 +1,92 @@
+@import './colours';
+
+.social-list {
+    font-size: 1.1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        transition: background-color 0.1s ease-in-out;
+
+        &:hover {
+            .social-list__icon {
+                transform: scale3d(1.2, 1.2, 1);
+            }
+        }
+
+        &--email {
+            background: $color-social-email;
+
+            .social-list__icon-container {
+                background: $color-social-email-alt;
+            }
+
+            &:hover {
+                background: lighten($color-social-email, 5%);
+            }
+        }
+
+        &--twitter {
+            background: $color-social-twitter;
+
+            .social-list__icon-container {
+                background: $color-social-twitter-alt;
+            }
+
+            &:hover {
+                background: lighten($color-social-twitter, 5%);
+            }
+        }
+
+        &--linkedin {
+            background: $color-social-linkedin;
+
+            .social-list__icon-container {
+                background: $color-social-linkedin-alt;
+            }
+
+            &:hover {
+                background: lighten($color-social-linkedin, 5%);
+            }
+        }
+
+        &--github {
+            background: lighten($color-social-github, 10%);
+
+            .social-list__icon-container {
+                background: $color-social-github-alt;
+            }
+
+            &:hover {
+                background: lighten($color-social-github, 20%);
+            }
+        }
+    }
+
+    &__link {
+        border-bottom: none;
+        color: #eee;
+        display: block;
+
+        &:hover {
+            color: #eee;
+            border-bottom: none;
+        }
+    }
+
+   &__icon-container {
+       display: inline-block;
+       padding: 0.4em 1em;
+   }
+
+   &__icon {
+       transition: transform 0.1s ease-in-out;
+   }
+
+   &__text {
+       font-size: 0.9em;
+       font-weight: 400;
+       padding: 0 1em;
+   }
+}

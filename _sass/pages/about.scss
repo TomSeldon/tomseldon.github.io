@@ -1,0 +1,19 @@
+@import '../colours';
+
+.about {
+    margin-bottom: 2em;
+
+    &__header {
+        border-bottom: 1px solid $about-heading-color;
+        color: $about-heading-color;
+        font-weight: 300;
+        font-size: 1.75em;
+        margin: 0 0 0.75em 0;
+        text-transform: lowercase;
+    }
+
+    &__text {
+        color: $about-text-color;
+        font-size: 1.05em;
+    }
+}

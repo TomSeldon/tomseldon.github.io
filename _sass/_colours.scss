@@ -1,0 +1,29 @@
+$ts-blue: #34526f;
+$ts-purple: #39354a;
+
+$headingColor: #555;
+$headingColorRgba: rgba(20,20,20,0.6);
+
+$headingColorPurple: $ts-purple;
+$headingColorBlue: $ts-blue;
+
+$link-color: lighten($ts-blue, 15%);
+$link-hover-color: lighten($ts-purple, 20%);
+
+$post-separator-color: rgba(20,20,20,0.3);
+$post-date-color: #777;
+
+$about-heading-color: #959595;
+$about-text-color: darken($about-heading-color, 25%);
+
+$color-social-twitter: #55acee;
+$color-social-twitter-rgba: rgba(85,172,238,0.8);
+$color-social-twitter-alt: darken($color-social-twitter, 7.5%);
+$color-social-blog: #ff6600; 
+$color-social-linkedin: #0e76a8;
+$color-social-linkedin-alt: darken($color-social-linkedin, 7.5%);
+$color-social-email: #dd4b39;
+$color-social-email-alt: darken($color-social-email, 7.5%);
+$color-social-github: #171515;
+$color-social-github-alt: darken($color-social-github, 7.5%);
+$color-social-phone: #82b548;

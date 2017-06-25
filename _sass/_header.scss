@@ -1,0 +1,68 @@
+@import './colours';
+
+.logo,
+.tagline {
+    text-align: center;
+    text-transform: lowercase;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.logo {
+    color: $headingColor;
+    color: $headingColorRgba;
+    display: block;
+    font-family: 'Poiret One', 'sans-serif';
+    font-size: 5.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0.65em;
+
+    .letter {
+        @keyframes fancy-odd {
+            0%      { color: $headingColorPurple; }
+            25%     { color: lighten($headingColorPurple, 10%) }
+            50%     { color: $headingColorBlue; }
+            75%     { color: lighten($headingColorBlue, 10%) }
+            100%     { color: lighten($headingColorPurple, 10%) }
+        };
+
+        @keyframes fancy-even {
+            0%      { color: $headingColorBlue; }
+            25%     { color: lighten($headingColorBlue, 10%) }
+            50%     { color: $headingColorPurple; }
+            75%     { color: lighten($headingColorPurple, 10%) }
+            100%     { color: lighten($headingColorBlue, 10%) }
+        };
+
+        &:nth-child(odd) {
+            color: $headingColorPurple;
+
+            &.fancy {
+                -webkit-animation: fancy-odd 5s infinite;
+                animation: fancy-odd 5s infinite;
+            }
+        }
+
+        &:nth-child(even) {
+            color: $headingColorBlue;
+
+            &.fancy {
+                -webkit-animation: fancy-even 5s infinite;
+                animation: fancy-even 5s infinite;
+            }
+        }
+    }
+}
+
+a:hover .logo {
+    opacity: 0.7;
+}
+
+.tagline {
+    cursor: default;
+    font-size: 1.3em;
+    margin: 0.5em auto;
+    font-weight: 300;
+    color: lighten($headingColor, 25%);
+    color: lighten($headingColorRgba, 25%);
+}

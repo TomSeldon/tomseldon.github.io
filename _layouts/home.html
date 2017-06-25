@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="home">
+    <h1 id="name" class="logo logo--home">Tom Seldon</h1>
+    <h2 class="tagline">Cardiff based web developer</h2>
+
+    <div class="home__icons">
+        {% if site.email %}
+        <!-- E-mail -->
+        <a class="home__icon home__icon--email" href="mailto:{{ site.email }}" title="E-mail - {{ site.email }}">
+            <span class="home__icon-icon fa fa-envelope"></span>
+            <label class="home__icon-label">E-mail</label>
+        </a>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <!-- Twitter -->
+        <a class="home__icon home__icon--twitter" href="https://twitter.com/{{ site.twitter_username }}" title="Twitter - @{{ site.twitter_username }}">
+            <span class="home__icon-icon fa fa-twitter"></span>
+            <label class="home__icon-label">Twitter</label>
+        </a>
+        {% endif %}
+
+        <!-- LinkedIn -->
+        <a class="home__icon home__icon--linkedin" href="https://uk.linkedin.com/in/tom-seldon-a3a4504a" title="LinkedIn profile">
+            <span class="home__icon-icon fa fa-linkedin"></span>
+            <label class="home__icon-label">LinkedIn</label>
+        </daiv>
+
+        {% if site.github_username %}
+        <!-- GitHub -->
+        <a class="home__icon home__icon--github" href="https://github.com/{{ site.github_username }}" title="GitHub - {{ site.github_username }}">
+            <span class="home__icon-icon fa fa-github"></span>
+            <label class="home__icon-label">GitHub</label>
+        </a>
+        {% endif %}
+
+        <!-- Blog -->
+        <a class="home__icon home__icon--blog" href="{{ site.baseurl }}{% link blog.md %}" title="Development blog">
+            <span class="home__icon-icon fa fa-file-text-o"></span>
+            <label class="home__icon-label">Blog</label>
+        </a>
+    </div>
+</div>

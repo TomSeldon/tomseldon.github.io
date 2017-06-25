@@ -1,0 +1,31 @@
+.blog {
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 6em auto;
+
+        @media all and (min-width: 960px) {
+            flex-direction: row;
+        }
+    }
+
+    &__content {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media all and (min-width: 960px) {
+            width: 65%;
+        }
+    }
+
+    &__sidebar {
+        margin-top: 4em;
+
+        @media all and (min-width: 960px) {
+            margin-top: 0;
+            width: 30%;
+        }
+    }
+}

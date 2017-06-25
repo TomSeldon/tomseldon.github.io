@@ -1,0 +1,15 @@
+@import './colours';
+
+a {
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+    color: $link-color;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+        border-bottom-color: $link-hover-color;
+        text-decoration: none;
+    }
+}

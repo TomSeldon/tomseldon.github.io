@@ -22,7 +22,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tomseldon.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TomSeldon1
-github_username:  TomSeldon
+github_username: TomSeldon
+google_analytics: UA-37236945-1
 
 permalink: /blog/:title
 
@@ -31,6 +32,12 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - font-awesome-sass
 exclude:
+  - bin
+  - node_modules
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - webpack.config.js

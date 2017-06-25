@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="page">
+    <div class="header">
+        <a href="{{ site.baseurl }}{% link blog.md %}"><span id="name" class="logo logo--post">Tom Seldon</span></a>
+        <h2 class="tagline">Web Development Blog</h2>
+    </div>
+
+    <div class="page__content-wrapper">
+        <div class="blog__content">
+            {{ content }}
+        </div>
+
+        <div class="page__sidebar">
+            {% include side-bar.html %}
+        </div>
+    </div>
+</div>
