@@ -32,7 +32,6 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-  - font-awesome-sass
 exclude:
   - bin
   - node_modules
