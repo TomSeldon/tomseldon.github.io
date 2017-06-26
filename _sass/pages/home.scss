@@ -17,11 +17,15 @@
     &__icon {
         color: #999;
         color: rgba(140, 140, 140, 0.6);
-        flex-basis: 20%;
         margin-bottom: 3em;
         text-align: center;
         text-decoration: none;
         transition: color 0.2s ease-in-out;
+        width: 30%;
+
+        @media all and (min-width: 750px) {
+            width: 20%;
+        }
 
         &:hover {
             border-bottom: none;
