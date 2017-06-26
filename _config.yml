@@ -25,7 +25,7 @@ twitter_username: TomSeldon1
 github_username: TomSeldon
 google_analytics: UA-37236945-1
 
-permalink: /blog/:title
+permalink: /blog/:title/
 
 # Build settings
 markdown: kramdown
