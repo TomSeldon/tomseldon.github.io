@@ -16,9 +16,9 @@
 title: Tom Seldon
 email: tom@tomseldon.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm Tom Seldon, a web developer from Cardiff South Wales. 
+  I love creating awesome stuff using frameworks such as Angular, AngularJS, React, etc. 
+  although I'm equally happy working with vanilla Javascript (or TypeScript).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.tomseldon.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TomSeldon1
