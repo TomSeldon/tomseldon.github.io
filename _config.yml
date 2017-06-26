@@ -35,8 +35,10 @@ gems:
 exclude:
   - bin
   - node_modules
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - package.json
   - package-lock.json
+  - tsconfig.json
   - webpack.config.js
