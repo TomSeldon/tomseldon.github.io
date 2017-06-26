@@ -1,1 +1,8 @@
+{% if jekyll.environment == 'production' %}
+<script src="https://cdn.ravenjs.com/3.16.0/raven.min.js" crossorigin="anonymous"></script>
+<script>
+    Raven.config('https://64e5c0cd54f4470fb6e1629ce1ac2693@sentry.io/183769').install();
+</script>
+{% endif %}
+
 <script src="{{ "/assets/js/main.min.js" | relative_url }}"></script>
