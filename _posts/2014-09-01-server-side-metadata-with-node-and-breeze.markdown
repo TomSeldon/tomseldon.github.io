@@ -6,13 +6,13 @@ categories: javascript breeze node mongo
 ---
 I recently came across a library called [Breeze](http://www.breezejs.com/), which (to sum up *very* briefly) is a client side JavaScript library that allows entity based data management; a kind of front-end ORM.
 
-#### A solution to complex client-server data management
+## A solution to complex client-server data management
 
 If you haven't heard of Breeze, I'd really recommend checking out the [introductory documentation](http://www.breezejs.com/documentation/introduction) before continuing as it explains the core concepts much better than I could hope to.
 
 I only have some cursory experience with it in the form of a [toy app I'm writing to try it out](https://github.com/TomSeldon/handbrake-preset-manager) and so I can't promise that everything said here is completely accurate or an example of best-practice.
 
-#### And then I hit a problem...
+## And then I hit a problem...
 
 One thing that I came across whilst looking through the [available NodeJS examples](https://github.com/Breeze/breeze.js.samples/tree/master/node) is that all of the metadata is defined on the client. That's all well and good when you're dealing with a tightly coupled client-server application, but what if you want your server to be the backend for a multitude of different (but related) client applications?
 
@@ -20,7 +20,7 @@ Even when considering an application that consists of a single client component,
 
 When it comes to having Breeze communicate with and fetch metatdata from a NodeJS backend, I couldn't find anything in the otherwise verbose documentation explaining how to go about doing this. Luckily, I only floundered for a short while until I found a simple and straightforward way of handling this.
 
-#### RTFM
+## RTFM
 
 Before continuing, I suggest having a read through the Breeze documenation on [writing metadata by hand](http://www.breezejs.com/documentation/metadata-by-hand). It's focussed on defining the metadata on the client application, however the process is very similar when doing the same on the server and so you should be at least familiar with the general process.
 
@@ -36,7 +36,7 @@ When it comes to defining the metadata on the server, the process is largely sim
 
 First of all, we need to make Breeze available to our Node application, then we can follow the above steps of using the `MetadataHelper` to add entitiy definitions to a `MetadataStore`. Finally, we'll need to create an endpoint that returns the result of calling `myMetadataStore.exportMetadata()`. That method will return an object that Breeze clients can consume and populate their own `MetadataStore`s.
 
-#### Making Breeze available to your Node application
+## Making Breeze available to your Node application
 
 This part is nice and simple. The [breeze-serverside NPM module](https://www.npmjs.org/package/breeze-serverside) allows you to import both Breeze and the MetadataHelper object into your Node application.
 
@@ -106,7 +106,7 @@ function getMetadata(request, response, next) {
 
 The above example is purposefully terse but you can see a [more robust implementation of this here](https://github.com/TomSeldon/handbrake-preset-manager/tree/blog-post-example/backend).
 
-#### ...and it still doesn't work
+## ...and it still doesn't work
 
 There's one final piece to this puzzle... If you try to run the above, Node will crash and burn as we try to add entities with an ID of type *'MongoObjectId'*. Breeze doesn't know what that is!
 
@@ -149,11 +149,11 @@ module.exports = registerMongoObjectId;
 
 Now, when adding our entity definitions using the `MetadataHelper`, Breeze will know just what a 'MongoObjectId' is and how to handle it.
 
-#### Famous last words...
+## Famous last words...
 
 Now, you can configure your Breeze client applications to fetch metadata from this endpoint and **it should all just work....**
 
-#### Final thoughts
+## Final thoughts
 
 Hopefully this has been a help to somebody. I think Breeze is fantastic and hope I get to use it in some real projects, though it would be nice for it get some more love in terms of examples and documentation for getting it working with technology outside of the .NET stack.
 
