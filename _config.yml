@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I love creating awesome stuff using frameworks such as Angular, AngularJS, React, etc. 
   although I'm equally happy working with vanilla Javascript (or TypeScript).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.tomseldon.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.tomseldon.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TomSeldon1
 github_username: TomSeldon
 google_analytics: UA-37236945-1
